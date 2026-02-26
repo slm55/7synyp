@@ -14,6 +14,7 @@ import {
   Cell
 } from 'recharts';
 
+
 const Header = ({ onLogout, studentName }: { onLogout: () => void, studentName?: string }) => (
   <header className="bg-white border-b border-zinc-200 sticky top-0 z-10">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -60,6 +61,7 @@ const Dashboard = ({ student, onLogout }: { student: Student, onLogout: () => vo
     score: (res.score / res.maxScore) * 100,
     actual: `${res.score}/${res.maxScore}`
   }));
+
 
   return (
     <div className="min-h-screen bg-zinc-50">
